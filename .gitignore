@@ -1,0 +1,34 @@
+# Generated equilibria, simulation results, and analysis summaries
+/02_network/*/init/
+/02_network/*/result/
+/02_network/*/result_raw*/
+
+# SLURM logs and temporary submission scripts
+/02_network/*/logs_attack_*/
+/02_network/*/atk_tmp_*.sh
+slurm-*.out
+
+# Generated figures, tables, and their caches
+/03_paper_figure/fig_[0-9]*/
+/03_paper_figure/table_*/
+
+# Build products; retain the example SLURM template
+/01_code/build/*
+!/01_code/build/run_atk.sh
+/01_code/get_init
+/01_code/attack_random_server
+/01_code/attack_power_server
+*.o
+*.so
+*.a
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
